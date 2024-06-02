@@ -1,0 +1,132 @@
+# Resumen de Selectores CSS
+
+Este documento resume los selectores CSS aplicados durante la actividad de CSS Diner.
+
+
+
+
+```css
+Selector de Elemento:
+
+p {
+  color: blue;
+}
+
+/* Descripción: Selecciona todos los elementos <p> y aplica el color azul.
+   Aplicación: Utilizado para estilizar todos los párrafos de un documento HTML. */
+
+
+Selector de Clase:
+
+css
+Copy code
+.example-class {
+  font-size: 18px;
+}
+
+/* Descripción: Selecciona todos los elementos con la clase example-class y aplica un tamaño de fuente de 18px.
+   Aplicación: Útil para aplicar estilos específicos a elementos que comparten una misma clase. */
+
+
+Selector de ID:
+
+css
+Copy code
+#example-id {
+  margin: 10px;
+}
+
+/* Descripción: Selecciona el elemento con el ID example-id y aplica un margen de 10px.
+   Aplicación: Ideal para aplicar estilos únicos a un solo elemento específico en la página. */
+
+
+Selector de Atributo:
+
+css
+Copy code
+input[type="text"] {
+  border: 1px solid black;
+}
+
+/* Descripción: Selecciona todos los elementos <input> de tipo texto y aplica un borde negro de 1px.
+   Aplicación: Utilizado para estilizar elementos en función de sus atributos específicos. */
+
+
+Selector Descendente:
+
+css
+Copy code
+div p {
+  color: red;
+}
+
+/* Descripción: Selecciona todos los elementos <p> que son descendientes de un <div> y aplica el color rojo.
+   Aplicación: Útil para aplicar estilos a elementos específicos dentro de una estructura de contenedor. */
+
+
+Selector de Pseudo-clase:
+
+css
+Copy code
+a:hover {
+  text-decoration: underline;
+}
+
+/* Descripción: Selecciona todos los enlaces <a> cuando el cursor pasa sobre ellos y aplica subrayado.
+   Aplicación: Comúnmente utilizado para mejorar la experiencia de usuario en enlaces. */
+
+
+Selector de Pseudo-elemento:
+css
+Copy code
+p::first-line {
+  font-weight: bold;
+}
+
+/* Descripción: Selecciona la primera línea de todos los elementos <p> y aplica negrita.
+   Aplicación: Útil para destacar la primera línea de párrafos en documentos de texto largos. */
+
+
+Selector de Hijo:
+
+css
+Copy code
+ul > li {
+  list-style-type: none;
+}
+
+/* Descripción: Selecciona todos los elementos <li> que son hijos directos de un <ul> y elimina el estilo de lista.
+   Aplicación: Útil para estilizar solo los elementos hijos directos dentro de una lista. */
+
+
+Selector General de Hermano:
+
+css
+Copy code
+h1 ~ p {
+  color: grey;
+}
+
+/* Descripción: Selecciona todos los elementos <p> que son hermanos de un <h1> y aplica el color gris.
+   Aplicación: Utilizado para aplicar estilos a todos los elementos hermanos en relación con un elemento específico. */
+
+Selector de Hermano Adyacente:
+
+css
+Copy code
+h1 + p {
+  margin-top: 0;
+}
+
+/* Descripción: Selecciona el elemento <p> que es adyacente (inmediatamente después) a un <h1> y elimina el margen superior.
+   Aplicación: Útil para ajustar el estilo de un elemento específico que sigue inmediatamente después de otro. */
+
+Selector de Grupo:
+css
+Copy code
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+
+/* Descripción: Selecciona todos los elementos <h1>, <h2>, y <h3> y aplica la fuente Arial.
+   Aplicación: Útil para aplicar el mismo estilo a múltiples tipos de elementos. */
